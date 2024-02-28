@@ -55,7 +55,7 @@ export default {
        * Create Hydrogen's Admin API client.
        */
       const {admin} = createAdminClient({
-        privateAdminToken: env.PRIVATE_ADMIN_API_TOKEN,
+        privateAdminToken: env.PRIVATE_STOREFRONT_API_TOKEN,
         storeDomain: `https://${env.PUBLIC_STORE_DOMAIN}`,
         adminApiVersion: env.PRIVATE_ADMIN_API_VERSION || '2023-10',
       });
