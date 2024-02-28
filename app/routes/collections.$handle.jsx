@@ -3,7 +3,7 @@ import { useLoaderData, Link } from '@remix-run/react';
 import { SortMenu, FiltersDrawer } from '~/components/SortBy';
 import { flattenConnection } from '@shopify/hydrogen';
 import React, { useEffect } from "react";
-import { WishlistIcon } from '~/components/WishList';
+// import { WishlistIcon } from '~/components/WishList';
 import {
   Pagination,
   getPaginationVariables,
@@ -278,7 +278,7 @@ function ProductItem({ product, loading }) {
   const variantUrl = useVariantUrl(product.handle, variant.selectedOptions);
   return (
     <div className="product-item">
-      <WishlistIcon id={product.id} />
+      {/* <WishlistIcon id={product.id} /> */}
       {product.featuredImage && (
         <Link
           key={product.id}
