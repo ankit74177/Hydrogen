@@ -1,7 +1,6 @@
 import {Await, NavLink} from '@remix-run/react';
 import {Suspense} from 'react';
 import {useRootLoaderData} from '~/root';
-// import { WishlistLink } from './WishList.jsx---------';
 /**
  * @param {HeaderProps}
  */
