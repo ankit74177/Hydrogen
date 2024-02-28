@@ -1,7 +1,7 @@
 import {Await, NavLink} from '@remix-run/react';
 import {Suspense} from 'react';
 import {useRootLoaderData} from '~/root';
-import { WishlistLink } from './WishList';
+// import { WishlistLink } from './WishList.jsx---------';
 /**
  * @param {HeaderProps}
  */
@@ -90,7 +90,7 @@ function HeaderCtas({isLoggedIn, cart}) {
       <NavLink prefetch="intent" to="/account">
         {isLoggedIn ? 'Account' : 'Sign in'}
       </NavLink>
-      <WishlistLink isLoggedIn={isLoggedIn}/>
+      {/* <WishlistLink isLoggedIn={isLoggedIn}/> */}
       <SearchToggle />
       <CartToggle cart={cart} />
     </nav>
